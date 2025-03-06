@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Smile Book</string>
+    <string name="profile_name">Dipesh Mahato</string>
+    <string name="post_profile">Suntosh dangol</string>
+    <string name="post_content">What a ccnario !!</string>
+
+    <string-array name="emotions">
+        <item>excited</item>
+        <item>happy</item>
+        <item>sad</item>
+        <item>irritated</item>
+    </string-array>
+
+    <string-array name="gifts">
+        <item> Perfume</item>
+        <item>Doll</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

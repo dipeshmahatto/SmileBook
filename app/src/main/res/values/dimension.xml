@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="nav_button_size">40sp</dimen>
+    <dimen name="profile_image_size">80sp</dimen>
+    <dimen name="post_profile_image_size">60sp</dimen>
+
+</resources>

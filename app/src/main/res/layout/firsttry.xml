@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5sp">
+
+<!--    NAv bar section-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0"
+        >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <ImageButton
+                    android:id="@+id/homeButton"
+                    android:layout_width="@dimen/nav_button_size"
+                    android:layout_height="@dimen/nav_button_size"
+                    android:background="@drawable/circular_base"
+                    android:src="@drawable/baseline_home_24"
+                    app:tint="@color/secondary"
+                    />
+
+                <ImageButton
+                    android:id="@+id/airplane"
+                    android:layout_width="@dimen/nav_button_size"
+                    android:layout_height="@dimen/nav_button_size"
+                    android:background="@drawable/circular_base"
+                    android:src="@drawable/baseline_airplanemode_active_24"
+                    app:tint="@color/secondary" />
+                <ImageButton
+                    android:id="@+id/inclusive"
+                    android:layout_width="@dimen/nav_button_size"
+                    android:layout_height="@dimen/nav_button_size"
+                    android:background="@drawable/circular_base"
+                    android:src="@drawable/baseline_all_inclusive_24"
+                    app:tint="@color/secondary" />
+                <ImageButton
+                    android:id="@+id/announcement"
+                    android:layout_width="@dimen/nav_button_size"
+                    android:layout_height="@dimen/nav_button_size"
+                    android:background="@drawable/circular_base"
+                    android:src="@drawable/baseline_announcement_24"
+                    app:tint="@color/secondary" />
+
+                <ImageButton
+                    android:id="@+id/assignment"
+                    android:layout_width="@dimen/nav_button_size"
+                    android:layout_height="@dimen/nav_button_size"
+                    android:background="@drawable/circular_base"
+                    android:src="@drawable/baseline_assignment_ind_24"
+                    app:tint="@color/secondary" />
+
+            </LinearLayout>
+
+
+        </TableRow>
+
+
+</TableLayout>
+
+<!--    Profile Section-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="@dimen/profile_image_size"
+            android:layout_height="@dimen/profile_image_size"
+            android:src="@drawable/sd"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/profileNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_name"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/profile_image_view"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/profileStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Felling Excited"
+            android:textSize="16sp"
+            android:layout_toEndOf="@+id/profile_image_view"
+            android:layout_below="@+id/profileNameView"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/emotions"
+            android:layout_toEndOf="@+id/profileStatus"
+            android:layout_below="@+id/profileNameView"
+            android:spinnerMode="dropdown"
+            />
+
+    </RelativeLayout>
+
+<!--    Post section-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/postProfileImageView"
+            android:layout_width="@dimen/post_profile_image_size"
+            android:layout_height="@dimen/post_profile_image_size"
+            android:src="@drawable/battle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/postProfileImageNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/post_profile"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/postProfileImageView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
